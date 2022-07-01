@@ -5,6 +5,9 @@ const hbs = require('hbs');
 const geocode = require('./utiles/geocode');
 const forecast=require('./utiles/forecast');
 
+const port = process.env.PORT || 3000
+
+
 // setup path for express congi.
 const publicDirectoryPath = path.join(__dirname,'../public');
 const viewpath = path.join(__dirname,'../templates/views');
@@ -90,6 +93,6 @@ app.get('/*',(req,res)=>{
 })
 
 
-app.listen(3000,()=>{
-    console.log("Running...!");
+app.listen(port,()=>{
+    console.log("Running on port " + port);
 })
