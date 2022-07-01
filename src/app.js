@@ -5,7 +5,6 @@ const hbs = require('hbs');
 const geocode = require('./utiles/geocode');
 const forecast=require('./utiles/forecast');
 
-
 // setup path for express congi.
 const publicDirectoryPath = path.join(__dirname,'../public');
 const viewpath = path.join(__dirname,'../templates/views');
